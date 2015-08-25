@@ -34,6 +34,20 @@ Also, uses infinite looping on the gradient effect for obvious reasons.-->
 
     .margiela{
       fill: #aa00ff;
+      -webkit-animation: margielaGradient 10s infinite;
+      animation: margielaGradient 10s infinite;
+    }
+
+    @-webkit-keyframes margielaGradient {
+      0% {fill: #aa00ff;}
+      50% {fill: #dd5055;}
+      100% {fill: #aa00ff;}
+    }
+
+    @keyframes margielaGradient {
+      0% {fill: #aa00ff;}
+      50% {fill: #dd5055;}
+      100% {fill: #aa00ff;}
     }
 
     .louie{
@@ -44,13 +58,13 @@ Also, uses infinite looping on the gradient effect for obvious reasons.-->
 
     @-webkit-keyframes louieGradient {
       0% {fill: #df466b;}
-      50% {fill: #b66bef;}
+      50% {fill: #eacc4c;}
       100% {fill: #df466b;}
     }
 
     @keyframes louieGradient {
       0% {fill: #df466b;}
-      50% {fill: #b66bef;}
+      50% {fill: #eacc4c;}
       100% {fill: #df466b;}
     }
 
@@ -79,26 +93,26 @@ Also, uses infinite looping on the gradient effect for obvious reasons.-->
 
 <body>
   <div class="gradient" align="center">
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 1680 3655.9" enable-background="new 0 0 1680 3655.9" xml:space="preserve">
-<rect x="0" y="2729" fill="none" width="1680" height="927"/>
-<text class="question" transform="matrix(1 0 0 1 570.0018 3568.9719)" opacity="0.12" font-family="'Stag-Semibold'" font-size="1200px">?</text>
-<rect x="-1807.5" y="1668.7" fill="#ECECE0" width="1687.6" height="1066.7"/>
-<rect x="106" y="1825.7" fill="none" width="1475.6" height="454.8"/>
-<text class="monospace" transform="matrix(1 0 0 1 123.1147 1959.8767)"><tspan x="0" y="0" font-family="'OCRAStd'" font-size="182px">What’s that </tspan><tspan x="262.1" y="218.4" font-family="'OCRAStd'" font-size="182px">jacket,</tspan></text>
-<rect x="-50.6" y="344.4" transform="matrix(0.8595 0.5111 -0.5111 0.8595 299.3783 -278.0946)" fill="none" width="1412.3" height="122.3"/>
-<text class="louie" transform="matrix(0.8595 0.5111 -0.5111 0.8595 228.7354 176.5891)" font-family="'OCRAStd'" font-size="112px">What’s Louie </text>
-<rect x="286.5" y="1122.1" transform="matrix(0.8598 -0.5106 0.5106 0.8598 -478.7598 693.8904)" fill="none" width="1475.6" height="193.5"/>
-<text class="drugs" transform="matrix(0.8598 -0.5106 0.5106 0.8598 601.0641 1453.6991)" font-family="'OCRAStd'" font-size="112px">What’s drugs </text>
-<rect y="2358.5" fill="none" width="1680" height="304.5"/>
-<text class="margiela" transform="matrix(1 0 0 1 102.9062 2544.3909)" font-family="'Stag-BoldDot'" font-size="260px">MARGIELA</text>
-<rect x="308.6" y="1194.5" transform="matrix(0.8598 -0.5106 0.5106 0.8598 -534.7169 777.4816)" fill="none" width="1680" height="336"/>
-<text class="drugs" transform="matrix(0.8598 -0.5106 0.5106 0.8598 672.0076 1595.0648)" font-family="'Outage-Regular'" font-size="178px">MY DEALA?</text>
-<rect x="-147.5" y="425.1" transform="matrix(0.8595 0.5111 -0.5111 0.8595 367.3555 -206.139)" fill="none" width="1412.3" height="280"/>
-<text class="louie" transform="matrix(0.8595 0.5111 -0.5111 0.8595 143.8677 300.5608)" font-family="'Outage-Cut'" font-size="178px">my killa?</text>
-</svg>
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 1680 3655.9" enable-background="new 0 0 1680 3655.9" xml:space="preserve">
+        <rect x="0" y="2729" fill="none" width="1680" height="927"/>
+        <text class="question" transform="matrix(1 0 0 1 570.0018 3568.9719)" opacity="0.12" font-family="'Stag-Semibold'" font-size="1200px">?</text>
+        <rect x="-1807.5" y="1668.7" fill="#ECECE0" width="1687.6" height="1066.7"/>
+        <rect x="106" y="1825.7" fill="none" width="1475.6" height="454.8"/>
+        <text class="monospace" transform="matrix(1 0 0 1 123.1147 1959.8767)"><tspan x="0" y="0" font-family="'OCRAStd'" font-size="182px">What’s that </tspan><tspan x="262.1" y="218.4" font-family="'OCRAStd'" font-size="182px">jacket,</tspan></text>
+        <rect x="-50.6" y="344.4" transform="matrix(0.8595 0.5111 -0.5111 0.8595 299.3783 -278.0946)" fill="none" width="1412.3" height="122.3"/>
+        <text class="louie" transform="matrix(0.8595 0.5111 -0.5111 0.8595 228.7354 176.5891)" font-family="'OCRAStd'" font-size="112px">What’s Louie </text>
+        <rect x="286.5" y="1122.1" transform="matrix(0.8598 -0.5106 0.5106 0.8598 -478.7598 693.8904)" fill="none" width="1475.6" height="193.5"/>
+        <text class="drugs" transform="matrix(0.8598 -0.5106 0.5106 0.8598 601.0641 1453.6991)" font-family="'OCRAStd'" font-size="112px">What’s drugs </text>
+        <rect y="2358.5" fill="none" width="1680" height="304.5"/>
+        <text class="margiela" transform="matrix(1 0 0 1 102.9062 2544.3909)" font-family="'Stag-BoldDot'" font-size="260px">MARGIELA</text>
+        <rect x="308.6" y="1194.5" transform="matrix(0.8598 -0.5106 0.5106 0.8598 -534.7169 777.4816)" fill="none" width="1680" height="336"/>
+        <text class="drugs" transform="matrix(0.8598 -0.5106 0.5106 0.8598 672.0076 1595.0648)" font-family="'Outage-Regular'" font-size="178px">MY DEALA?</text>
+        <rect x="-147.5" y="425.1" transform="matrix(0.8595 0.5111 -0.5111 0.8595 367.3555 -206.139)" fill="none" width="1412.3" height="280"/>
+        <text class="louie" transform="matrix(0.8595 0.5111 -0.5111 0.8595 143.8677 300.5608)" font-family="'Outage-Cut'" font-size="178px">my killa?</text>
+    </svg>
 
 
   </div>
