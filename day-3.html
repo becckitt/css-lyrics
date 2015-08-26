@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  
+  <title> Title </title>
+
+  <style type="text/css">
+    @font-face {
+      font-family:"Didot-Bold";
+      src: url("fonts/Didot.ttc");
+    }
+
+    @font-face {
+      font-family:"Tungsten-Book";
+      src: url("fonts/Tungsten-Book.otf");
+    }
+
+    body {
+      background: #eee9ea;
+    }
+
+    .draw {
+      stroke: #000;
+      stroke-width: .5;
+      stroke-dasharray: 1100;
+      stroke-dashoffset: 1100;
+      animation: draw-effect 5s linear forwards;
+
+    }
+
+   /* KEYFRAMES*/
+    @keyframes draw-effect {
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fill-er-up {
+      100% {
+        fill: #000;
+        stroke-width:0;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+  <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<rect x="5.4" y="18" fill="none" width="135.2" height="51.6"/>
+
+<text transform="matrix(1 0 0 1 5.4404 29.3325)" font-family="'Tungsten-Book'" font-size="16px">That’s</text>
+
+<rect x="0" y="34.4" fill="none" width="137.4" height="51.6"/>
+
+<text class="draw" fill="none" transform="matrix(1 0 0 1 -2.239943e-04 47.4094)" font-family="'Didot-Bold'" font-size="18px">‘Dior Homme’</text>
+<rect x="-27.3" y="61" fill="none" width="150" height="22.9"/>
+<text transform="matrix(1 0 0 1 40.8949 72.3687)" font-family="'Tungsten-Book'" font-size="16px">not</text>
+<rect x="2.2" y="77.2" fill="none" width="147.8" height="51.6"/>
+
+<text class="draw" fill="none" transform="matrix(1 0 0 1 34.6209 90.2162)" font-family="'Didot-Bold'" font-size="18px">‘Dior, homie.’</text>
+</svg>
+
+
+</body>
+</html>
