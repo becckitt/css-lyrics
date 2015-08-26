@@ -1,1 +1,99 @@
-stylin.css
+ /*Sets up a sixteen column grid*/
+
+ .col-md-1 {
+    width:6%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-2 {
+    width:12%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-3 {
+    width:18%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-4 {
+    width:24%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-5 {
+    width:30%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-6 {
+    width:36%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-7 {
+    width:42%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-8 {
+    width:48%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-9 {
+    width:54%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-10 {
+    width:60%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+.col-md-11 {
+    width:66%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-12 {
+    width:72%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-13 {
+    width:78%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-14 {
+    width:84%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-15 {
+    width:90%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-16 {
+    width:100%;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+
