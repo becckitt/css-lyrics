@@ -24,8 +24,13 @@
       background-image: linear-gradient(to bottom, #9f5c64, rgba(239,127,26,0.5) 80%);
     }
 
+
+/*
+    
+
     .glitch {
       position:relative;
+
     }
 
     .glitch:before, .glitch:after {
@@ -75,6 +80,27 @@
       }
     }
 
+    @-webkit-keyframes glitch-anim-1 {
+      0% {
+        clip: rect(70px, 450px, 76px, 0);
+      }
+      20% {
+        clip: rect(29px, 450px, 16px, 0);
+      }
+      40% {
+        clip: rect(76px, 450px, 3px, 0);
+      }
+      60% {
+        clip: rect(42px, 450px, 78px, 0);
+      }
+      80% {
+        clip: rect(15px, 450px, 13px, 0);
+      }
+      100% {
+        clip: rect(53px, 450px, 5px, 0);
+      }
+    }
+
     @keyframes glitch-anim-2 {
       0% {
         clip: rect(35px, 450px, 16px, 0);
@@ -94,7 +120,7 @@
       100% {
         clip: rect(53px, 450px, 1px, 0);
       }
-    }
+    }*/
   </style>
   
   <title> I'm the Illest </title>
@@ -111,12 +137,19 @@
 <text transform="matrix(1 0 0 1 2.3394 14.8443)">
 <tspan x="0" y="0" font-family="'OCRAStd'" font-size="8px">Doctors say I’m the</tspan>
 <tspan x="109.4" y="0" font-family="'OCRAStd'" font-size="12px"> </tspan>
-<tspan class="glitch" data-text="glitch" x="0" y="28.8" font-family="'OCRAStd'" font-size="24px">ILL-</tspan>
-<tspan class="glitch" data-text="glitch" x="0" y="57.6" font-family="'OCRAStd'" font-size="24px">EST</tspan>
+<!-- <g class="glitch"> -->
+  <tspan class="glitch" x="0" y="28.8" font-family="'OCRAStd'" font-size="24px">ILL-</tspan>
+  <tspan class="glitch" x="0" y="57.6" font-family="'OCRAStd'" font-size="24px">EST</tspan>
+<!-- </g> -->
 <tspan x="0" y="84" font-family="'OCRAStd'" font-size="8px">cuz I’m sufferin’ from</tspan>
 <tspan x="126.7" y="84" font-family="'OCRAStd'" font-size="12px"> </tspan>
-<tspan class="glitch" data-text="glitch" x="0" y="112.8" font-family="'OCRAStd'" font-size="24px">REAL-</tspan>
-<tspan class="glitch" data-text="glitch" x="0" y="141.6" font-family="'OCRAStd'" font-size="24px">NESS.</tspan></text>
+
+<!-- <g class="glitch2"> -->
+  <tspan class="draw glitch2" x="0" y="112.8" font-family="'OCRAStd'" font-size="24px">REAL-</tspan>
+  <tspan class="draw glitch2" x="0" y="141.6" font-family="'OCRAStd'" font-size="24px">NESS.</tspan>
+<!-- </g> -->
+
+</text>
 </svg>
 
 
