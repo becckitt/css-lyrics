@@ -4,155 +4,396 @@
 <head>
   
   <meta charset="UTF-8">
-  <style type="text/css">
-    @font-face {
-      font-family:'OCRAStd';
-      src: url('fonts/OCRAStd.otf');
-    }
-
-    body {
-      margin: 0;
-    }
-
-    .gradient {
-      height:3700px;
-      width:100vw;
-      background-color: #9f5c64; /*top colour*/
-      background-image: -webkit-linear-gradient(top, #9f5c64, rgba(239,127,26,0.5) 80%);
-      background-image: -moz-linear-gradient(top, #9f5c64, rgba(239,127,26,0.5) 80%);
-      background-image: -o-linear-gradient(top, #9f5c64, rgba(239,127,26,0.5) 80%);
-      background-image: linear-gradient(to bottom, #9f5c64, rgba(239,127,26,0.5) 80%);
-    }
-
-
-/*
-    
-
-    .glitch {
-      position:relative;
-
-    }
-
-    .glitch:before, .glitch:after {
-      content: attr(data-text);
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-    }
-
-    .glitch:before{
-      left: 2px;
-      text-shadow: -1px 0 red;
-      background:black;
-
-      clip: rect(44px, 450px, 56px, 0);
-      animation: glitch-anim-1 2s infinite linear alternate-reverse;
-    }
-
-    .glitch:after {
-      left: -2px;
-      text-shadow: -1px 0 blue;
-      background:black;
-
-      clip: rect(88px, 450px, 96px, 0);
-      animation: glitch-anim-2 2s infinite linear alternate-reverse;
-    }
-
-    @keyframes glitch-anim-1 {
-      0% {
-        clip: rect(70px, 450px, 76px, 0);
-      }
-      20% {
-        clip: rect(29px, 450px, 16px, 0);
-      }
-      40% {
-        clip: rect(76px, 450px, 3px, 0);
-      }
-      60% {
-        clip: rect(42px, 450px, 78px, 0);
-      }
-      80% {
-        clip: rect(15px, 450px, 13px, 0);
-      }
-      100% {
-        clip: rect(53px, 450px, 5px, 0);
-      }
-    }
-
-    @-webkit-keyframes glitch-anim-1 {
-      0% {
-        clip: rect(70px, 450px, 76px, 0);
-      }
-      20% {
-        clip: rect(29px, 450px, 16px, 0);
-      }
-      40% {
-        clip: rect(76px, 450px, 3px, 0);
-      }
-      60% {
-        clip: rect(42px, 450px, 78px, 0);
-      }
-      80% {
-        clip: rect(15px, 450px, 13px, 0);
-      }
-      100% {
-        clip: rect(53px, 450px, 5px, 0);
-      }
-    }
-
-    @keyframes glitch-anim-2 {
-      0% {
-        clip: rect(35px, 450px, 16px, 0);
-      }
-      20% {
-        clip: rect(70px, 450px, 76px, 0);
-      }
-      40% {
-        clip: rect(65px, 450px, 25px, 0);
-      }
-      60% {
-        clip: rect(79px, 450px, 30px, 0);
-      }
-      80% {
-        clip: rect(20px, 450px, 70px, 0);
-      }
-      100% {
-        clip: rect(53px, 450px, 1px, 0);
-      }
-    }*/
-  </style>
   
-  <title> I'm the Illest </title>
+  <title> Most Rappers </title>
+  <script src="js/modernizr.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylin.css">
+
+  <style type="text/css">
+
+  body {
+      background: #eee9ea;
+    }
+
+.didot {
+  background-color: #e28c86;
+}
+
+.rotate-1.is-visible{
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.is-visible {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-in 2s;
+  -moz-animation: cd-rotate-1-in 2s;
+  animation: cd-rotate-1-in 2s;
+}
+
+.is-visible-2 {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-in 2s .25s;
+  -moz-animation: cd-rotate-1-in 2s .25s;
+  animation: cd-rotate-1-in 2s .25s;
+}
+
+.is-hidden {
+  opacity:1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-out 3s .2s;
+  -moz-animation: cd-rotate-1-out 3s .2s;
+  animation: cd-rotate-1-out 3s .2s;
+} 
+
+.is-hidden-2 {
+  opacity:1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-out 3s .4s;
+  -moz-animation: cd-rotate-1-out 3s .4s;
+  animation: cd-rotate-1-out 3s .4s;
+} 
+
+.set-perspective {
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  perspective: 300px;
+}
+
+
+
+
+@-webkit-keyframes cd-rotate-1-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-1-in {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-1-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+@-webkit-keyframes cd-rotate-2-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-2-in {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-2-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+
+@-webkit-keyframes cd-rotate-1-out {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-1-out {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-1-out {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@-webkit-keyframes cd-rotate-2-out {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-2-out {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-2-out {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+
+  </style>
 </head>
 
 
 <body>
-<div class="gradient">
-  <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 165.7 212" enable-background="new 0 0 165.7 212" xml:space="preserve">
-<rect x="2.3" y="6" fill="none" width="145.1" height="192.4"/>
-<text transform="matrix(1 0 0 1 2.3394 14.8443)">
-<tspan x="0" y="0" font-family="'OCRAStd'" font-size="8px">Doctors say I’m the</tspan>
-<tspan x="109.4" y="0" font-family="'OCRAStd'" font-size="12px"> </tspan>
-<!-- <g class="glitch"> -->
-  <tspan class="glitch" x="0" y="28.8" font-family="'OCRAStd'" font-size="24px">ILL-</tspan>
-  <tspan class="glitch" x="0" y="57.6" font-family="'OCRAStd'" font-size="24px">EST</tspan>
-<!-- </g> -->
-<tspan x="0" y="84" font-family="'OCRAStd'" font-size="8px">cuz I’m sufferin’ from</tspan>
-<tspan x="126.7" y="84" font-family="'OCRAStd'" font-size="12px"> </tspan>
+   viewBox="0 0 103.5 71.7" enable-background="new 0 0 103.5 71.7" xml:space="preserve">
 
-<!-- <g class="glitch2"> -->
-  <tspan class="draw glitch2" x="0" y="112.8" font-family="'OCRAStd'" font-size="24px">REAL-</tspan>
-  <tspan class="draw glitch2" x="0" y="141.6" font-family="'OCRAStd'" font-size="24px">NESS.</tspan>
-<!-- </g> -->
+<rect y="11" fill="none" width="103.5" height="28.7"/>
+<g class="set-perspective rotate-1">
+<g class="taste-level is-visible">
+  <text class="didot" transform="matrix(1 0 0 1 28.9425 17.0802)" font-family="'Didot-Italic'" font-size="8px">Most rappers’</text>
+</g>
 
-</text>
+<g class="taste-level is-visible-2">
+  <rect y="19.7" fill="none" width="103.5" height="28.7"/>
+  <text transform="matrix(1 0 0 1 27.6847 29.158)" font-family="'GiorgioSans-Bold'" font-size="14px">TASTE LEVEL</text>
+</g>
+
+<rect y="33.1" fill="none" width="103.5" height="3.2"/>
+
+<g class="waist-level is-hidden">
+<text transform="matrix(1 0 0 1 47.8322 35.7954)" font-family="'GiorgioSans-Bold'" font-size="4px">•        •       •</text>
+  <rect y="37.7" fill="none" width="103.5" height="28.7"/>
+  <text class="didot" transform="matrix(1 0 0 1 33.9064 43.7464)" font-family="'Didot-Italic'" font-size="8px">ain’t at my</text>
+</g>
+
+<g class="waist-level is-hidden-2">
+  <rect y="46" fill="none" width="103.5" height="28.7"/>
+  <text transform="matrix(1 0 0 1 27.2438 55.4918)" font-family="'GiorgioSans-Bold'" font-size="14px">WAIST LEVEL</text>
+</g>
+
+</g>
+<line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="18.3" y1="6.8" x2="85" y2="6.8"/>
+<line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="18.3" y1="61.7" x2="85" y2="61.7"/>
 </svg>
-
-
-</div>
 </body>
 </html>
