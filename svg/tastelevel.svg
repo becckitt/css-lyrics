@@ -12,14 +12,6 @@
 <text transform="matrix(1 0 0 1 33.9064 43.7464)" font-family="'Didot-Italic'" font-size="8px">ain’t at my</text>
 <rect y="46" fill="none" width="103.5" height="28.7"/>
 <text transform="matrix(1 0 0 1 27.2438 55.4918)" font-family="'GiorgioSans-Bold'" font-size="14px">WAIST LEVEL</text>
-<rect x="164.5" y="20.3" fill="none" width="137" height="28.7"/>
-<text transform="matrix(1 0 0 1 164.5002 28.7334)" font-family="'StagStencil-Light'" font-size="12px">Most rappers’</text>
-<rect x="163.5" y="33" fill="none" width="137" height="28.7"/>
-<text transform="matrix(1 0 0 1 163.5002 45.6003)" font-family="'Stag-Semibold'" font-size="18px">TASTE LEVEL</text>
-<rect x="164.5" y="50.3" fill="none" width="137" height="28.7"/>
-<text transform="matrix(1 0 0 1 164.5002 58.7334)" font-family="'StagStencil-Light'" font-size="12px">ain’t at my</text>
-<rect x="163.5" y="61.7" fill="none" width="137" height="28.7"/>
-<text transform="matrix(1 0 0 1 163.5002 74.2669)" font-family="'Stag-Semibold'" font-size="18px">WAIST LEVEL</text>
 <line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="18.3" y1="6.8" x2="85" y2="6.8"/>
 <line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="18.3" y1="61.7" x2="85" y2="61.7"/>
 </svg>

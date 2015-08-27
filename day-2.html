@@ -5,38 +5,395 @@
   
   <meta charset="UTF-8">
   
-  <title> Title </title>
+  <title> Most Rappers </title>
+  <script src="js/modernizr.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylin.css">
+
+  <style type="text/css">
+
+  body {
+      background: #eee9ea;
+    }
+
+.didot {
+  background-color: #e28c86;
+}
+
+.rotate-1.is-visible{
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.is-visible {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-in 2s;
+  -moz-animation: cd-rotate-1-in 2s;
+  animation: cd-rotate-1-in 2s;
+}
+
+.is-visible-2 {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-in 2s .25s;
+  -moz-animation: cd-rotate-1-in 2s .25s;
+  animation: cd-rotate-1-in 2s .25s;
+}
+
+.is-hidden {
+  opacity:1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-out 3s .2s;
+  -moz-animation: cd-rotate-1-out 3s .2s;
+  animation: cd-rotate-1-out 3s .2s;
+} 
+
+.is-hidden-2 {
+  opacity:1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-out 3s .4s;
+  -moz-animation: cd-rotate-1-out 3s .4s;
+  animation: cd-rotate-1-out 3s .4s;
+} 
+
+.set-perspective {
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  perspective: 300px;
+}
+
+
+
+
+@-webkit-keyframes cd-rotate-1-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-1-in {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-1-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+@-webkit-keyframes cd-rotate-2-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-2-in {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-2-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+
+@-webkit-keyframes cd-rotate-1-out {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-1-out {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-1-out {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@-webkit-keyframes cd-rotate-2-out {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-rotate-2-out {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+@keyframes cd-rotate-2-out {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+
+  </style>
 </head>
 
 
 <body>
-  
-  <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 103.5 71.7" enable-background="new 0 0 103.5 71.7" xml:space="preserve">
+
 <rect y="11" fill="none" width="103.5" height="28.7"/>
-<text transform="matrix(1 0 0 1 28.9425 17.0802)" font-family="'Didot-Italic'" font-size="8px">Most rappers’</text>
-<rect y="19.7" fill="none" width="103.5" height="28.7"/>
-<text transform="matrix(1 0 0 1 27.6847 29.158)" font-family="'GiorgioSans-Bold'" font-size="14px">TASTE LEVEL</text>
+<g class="set-perspective rotate-1">
+<g class="taste-level is-visible">
+  <text class="didot" transform="matrix(1 0 0 1 28.9425 17.0802)" font-family="'Didot-Italic'" font-size="8px">Most rappers’</text>
+</g>
+
+<g class="taste-level is-visible-2">
+  <rect y="19.7" fill="none" width="103.5" height="28.7"/>
+  <text transform="matrix(1 0 0 1 27.6847 29.158)" font-family="'GiorgioSans-Bold'" font-size="14px">TASTE LEVEL</text>
+</g>
+
 <rect y="33.1" fill="none" width="103.5" height="3.2"/>
-<text transform="matrix(1 0 0 1 48.9123 35.7954)" font-family="'GiorgioSans-Bold'" font-size="4px">•     •    •</text>
-<rect y="37.7" fill="none" width="103.5" height="28.7"/>
-<text transform="matrix(1 0 0 1 33.9064 43.7464)" font-family="'Didot-Italic'" font-size="8px">ain’t at my</text>
-<rect y="46" fill="none" width="103.5" height="28.7"/>
-<text transform="matrix(1 0 0 1 27.2438 55.4918)" font-family="'GiorgioSans-Bold'" font-size="14px">WAIST LEVEL</text>
-<rect x="164.5" y="20.3" fill="none" width="137" height="28.7"/>
-<text transform="matrix(1 0 0 1 164.5002 28.7334)" font-family="'StagStencil-Light'" font-size="12px">Most rappers’</text>
-<rect x="163.5" y="33" fill="none" width="137" height="28.7"/>
-<text transform="matrix(1 0 0 1 163.5002 45.6003)" font-family="'Stag-Semibold'" font-size="18px">TASTE LEVEL</text>
-<rect x="164.5" y="50.3" fill="none" width="137" height="28.7"/>
-<text transform="matrix(1 0 0 1 164.5002 58.7334)" font-family="'StagStencil-Light'" font-size="12px">ain’t at my</text>
-<rect x="163.5" y="61.7" fill="none" width="137" height="28.7"/>
-<text transform="matrix(1 0 0 1 163.5002 74.2669)" font-family="'Stag-Semibold'" font-size="18px">WAIST LEVEL</text>
+
+<g class="waist-level is-hidden">
+<text transform="matrix(1 0 0 1 47.8322 35.7954)" font-family="'GiorgioSans-Bold'" font-size="4px">•        •       •</text>
+  <rect y="37.7" fill="none" width="103.5" height="28.7"/>
+  <text class="didot" transform="matrix(1 0 0 1 33.9064 43.7464)" font-family="'Didot-Italic'" font-size="8px">ain’t at my</text>
+</g>
+
+<g class="waist-level is-hidden-2">
+  <rect y="46" fill="none" width="103.5" height="28.7"/>
+  <text transform="matrix(1 0 0 1 27.2438 55.4918)" font-family="'GiorgioSans-Bold'" font-size="14px">WAIST LEVEL</text>
+</g>
+
+</g>
 <line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="18.3" y1="6.8" x2="85" y2="6.8"/>
 <line fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" x1="18.3" y1="61.7" x2="85" y2="61.7"/>
 </svg>
-
-
 </body>
 </html>

@@ -18,17 +18,25 @@
     }
 
     .background {
-      position: absolute;
+      position: fixed;
       z-index: -999;
       width:60%;
       height:600px;
-      top: 100px;
+      top: 200px;
       left: 30%;
       background: url('img/kanye.jpg') no-repeat;
       background-size:150%;
     }
+
+    .header {
+      font-size:1.5rem;
+      height: 130px;
+    }
+
     h1 {
       font-family: 'Stag-Semibold';
+      margin:0;
+      padding-top: 25px;
     }
 
     .kanyetext {
@@ -50,8 +58,10 @@
 </div>
 
 <div class="col-md-8">
-  <h1 class="col-md-offset-1">CSS Lyrics </h1>
-  <p class="col-md-offset-1 kanyetext">Exploring CSS animations one set of Kanye lyrics at a time.</p>
+  <div class="header">
+    <h1 class="col-md-offset-1">CSS Lyrics </h1>
+    <p class="col-md-offset-1 kanyetext">Exploring CSS animations one set of Kanye lyrics at a time.</p>
+  </div>
   <h2 class="col-md-8 col-md-offset-4"><a href="day-1.html">Day 1</a></h2>
   <h2 class="col-md-8 col-md-offset-4"><a href="day-2.html">Day 2</a></h2>
   <h2 class="col-md-8 col-md-offset-4"><a href="day-3.html">Day 3</a></h2>
