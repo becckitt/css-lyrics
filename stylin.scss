@@ -1,0 +1,284 @@
+ /*Variables*/
+ $light-pink: #eee9ea;
+
+/*Sets up all fonts used*/
+
+@font-face {
+      font-family:'OCRAStd';
+      src: url('fonts/OCRAStd.otf');
+    }
+
+@font-face {
+      font-family:'Outage-Regular';
+      src: url('fonts/Outage.ttf');
+    }
+
+@font-face {
+      font-family:'Stag-Semibold';
+      src: url('fonts/Stag-Semibold.otf');
+    }
+
+@font-face {
+      font-family:'Stag-BoldDot';
+      src: url('fonts/Stag-BoldDot.otf');
+    }
+
+@font-face {
+      font-family:"Didot-Bold";
+      src: url("fonts/Didot.ttc");
+    }
+
+@font-face {
+      font-family:"Tungsten-Book";
+      src: url("fonts/Tungsten-Book.otf");
+    }
+ body {
+      margin: 0;
+    }
+
+ /*Sets up a sixteen column grid*/
+
+ @mixin column-setup($width) {
+    width:$width;
+    margin-left: .125%;
+    margin-right: .125%;
+ }
+
+ .col-md-1 {
+    @include column-setup(6%);
+ }
+
+ .col-md-2 {
+    @include column-setup(12%);
+ }
+
+ .col-md-3 {
+    @include column-setup(18%);
+ }
+
+ .col-md-4 {
+    @include column-setup(24%);
+ }
+
+ .col-md-5 {
+    @include column-setup(30%);
+ }
+
+ .col-md-6 {
+    @include column-setup(36%);
+ }
+
+ .col-md-7 {
+    @include column-setup(42%);
+ }
+
+ .col-md-8 {
+    @include column-setup(48%);
+ }
+
+ .col-md-9 {
+    @include column-setup(54%);
+ }
+
+ .col-md-10 {
+    @include column-setup(60%);
+ }
+
+.col-md-11 {
+    @include column-setup(66%);
+ }
+
+ .col-md-12 {
+    @include column-setup(72%);
+ }
+
+ .col-md-13 {
+    @include column-setup(78%);
+ }
+
+ .col-md-14 {
+    @include column-setup(84%);
+ }
+
+ .col-md-15 {
+    @include column-setup(90%);
+ }
+
+ .col-md-16 {
+    @include column-setup(100%);
+ }
+
+ .col-md-offset-1 {
+    margin-left: 6%;
+ }
+
+ .col-md-offset-2 {
+    margin-left: 12%;
+ }
+
+ .col-md-offset-3 {
+    margin-left: 18%;
+ }
+
+ .col-md-offset-4 {
+    margin-left: 24%;
+ }
+
+ .col-md-offset-5 {
+    margin-left: 30%;
+ }
+
+ .col-md-offset-6 {
+    margin-left: 36%;
+ }
+
+ .col-md-offset-7 {
+    margin-left: 42%;
+ }
+
+ .col-md-offset-8 {
+    margin-left: 48%;
+ }
+
+ .col-md-offset-9 {
+    margin-left: 54%;
+ }
+
+ .col-md-offset-10 {
+    margin-left: 60%;
+ }
+
+ .col-md-offset-11 {
+    margin-left: 66%;
+ }
+
+ .col-md-offset-12 {
+    margin-left: 72%;
+ }
+
+ .col-md-offset-13 {
+    margin-left: 78%;
+ }
+
+ .col-md-offset-14 {
+    margin-left: 84%;
+ }
+
+ .col-md-offset-15 {
+    margin-left: 90%;
+ }
+
+ .col-md-offset-16 {
+    margin-left: 96%;
+ }
+
+
+ /*COLORS & Gradients*/
+
+ @mixin three-color-gradient($color1, $color2, $color3) {
+      margin: 0;
+      height:3700px;
+      width:100vw;
+      background-color: $color1; /*top colour*/
+      background-image: -webkit-linear-gradient(top, $color1, $color2 50%,$color3 85%);
+      background-image: -moz-linear-gradient(top, $color1, $color2 50%,$color3 85%);
+      background-image: -o-linear-gradient(top, $color1, $color2 50%,$color3 85%);
+      background-image: linear-gradient(to bottom, $color1, $color2 50%,$color3 85%);
+    }
+
+.gradient {
+      @include three-color-gradient(rgb(196,253,233), rgb(246,176,182), rgba(239,127,26,0.5))
+    }
+
+/* /////////////////////    DAY 1    /////////////////////////////*/
+
+@mixin day-one-animation {
+    0% {fill: #df466b;}
+    50% {fill: #b66bef;}
+    100% {fill: #df466b;}
+}
+
+@-webkit-keyframes louieGradient {
+      @include day-one-animation;
+    }
+@keyframes louieGradient {
+      @include day-one-animation;
+    }
+@-webkit-keyframes drugsGradient {
+      @include day-one-animation;
+    }
+@keyframes drugsGradient {
+      @include day-one-animation;
+    }
+
+/* /////////////////////    DAY 2    /////////////////////////////*/
+@mixin day-two-perspective-anim($sec, $delay) {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-in $sec $delay;
+  -moz-animation: cd-rotate-1-in $sec $delay;
+  animation: cd-rotate-1-in $sec $delay;
+}
+.is-visible {
+    @include day-two-perspective-anim(2s, 0s); 
+}
+
+.is-visible-2 {
+    @include day-two-perspective-anim(2s, .25s);
+}
+
+.is-hidden {
+    @include day-two-perspective-anim(3s, .2s);
+} 
+
+.is-hidden-2 {
+    @include day-two-perspective-anim(3s, .4s);
+  /*-webkit-animation: cd-rotate-1-out 3s .4s;*/
+} 
+
+@mixin rotate-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cd-rotate-1-in {
+  @include rotate-in;
+}
+
+@-moz-keyframes cd-rotate-1-in {
+    @include rotate-in;
+}
+@keyframes cd-rotate-1-in {
+  @include rotate-in;
+}
+
+/* /////////////////////    DAY 2    /////////////////////////////*/
