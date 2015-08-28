@@ -179,18 +179,18 @@ body {
     fill: #df466b; } }
 @-webkit-keyframes drugsGradient {
   0% {
-    fill: #53b690; }
+    fill: #25bdd3; }
   50% {
-    fill: #f3b247; }
+    fill: #952283; }
   100% {
-    fill: #53b690; } }
+    fill: #25bdd3; } }
 @keyframes drugsGradient {
   0% {
-    fill: #53b690; }
+    fill: #25bdd3; }
   50% {
-    fill: #f3b247; }
+    fill: #952283; }
   100% {
-    fill: #53b690; } }
+    fill: #25bdd3; } }
 @-webkit-keyframes margielaGradient {
   0% {
     fill: #f36d65; }
