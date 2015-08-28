@@ -1,0 +1,88 @@
+$primary-color: #369;
+$margin: 5px;
+$padding: $margin * 1.5;
+$background: #187;
+$desat-background: desaturate($background, 50%);
+$crazy-color: mix(#369, #187);
+$text-color: complement($background);
+$highlighted-text-color: lighten($text-color, 20%);
+
+/*Regular mixins: good to use if you're seeing the same code 2 or 3 times*/
+/*Global mixins: good to use if you're seeing the same code 6 or more times*/
+
+@mixin roundy {
+  border-radius: 4px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+@mixin roundy_with_args($radius) {
+  border-radius: $radius;
+  border-top-right-radius: $radius * 2;
+  border-bottom-left-radius: $radius * 2;
+}
+
+@mixin green_links {
+  a {
+    color:green;
+    &:hover {
+      color:blue;
+    }
+  }
+}
+
+%bar {
+  height: 14px;
+  font-size: 10px;
+  > div {
+    float:left;
+    clear: none;
+  }
+}
+
+.menu {
+  @extend %bar;
+  background: #345;
+}
+
+.nav {
+  @extend %bar;
+}
+
+.box {
+  @include roundy_with_args(4px);
+  @include green_links;
+}
+
+
+.blog {
+  > h1 {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    margin: $margin 0 0 $margin;
+  }
+
+  .entry {
+    p {
+      font-size:16px;
+      margin: $margin;
+      html.csscolumns & {
+        column-count: 2;
+        column-gap: 10px;
+        margin: $margin;
+        padding: $padding;
+      }
+    }
+
+    a {
+      color:$primary-color;
+      &:hover {
+        color:blue;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}

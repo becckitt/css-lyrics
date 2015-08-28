@@ -1,0 +1,41 @@
+/*Regular mixins: good to use if you're seeing the same code 2 or 3 times*/
+/*Global mixins: good to use if you're seeing the same code 6 or more times*/
+.menu, .nav {
+  height: 14px;
+  font-size: 10px; }
+  .menu > div, .nav > div {
+    float: left;
+    clear: none; }
+
+.menu {
+  background: #345; }
+
+.box {
+  border-radius: 4px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px; }
+  .box a {
+    color: green; }
+    .box a:hover {
+      color: blue; }
+
+.blog > h1 {
+  color: #369;
+  border: 1px solid #369;
+  margin: 5px 0 0 5px; }
+.blog .entry p {
+  font-size: 16px;
+  margin: 5px; }
+  html.csscolumns .blog .entry p {
+    column-count: 2;
+    column-gap: 10px;
+    margin: 5px;
+    padding: 7.5px; }
+.blog .entry a {
+  color: #369; }
+  .blog .entry a:hover {
+    color: blue; }
+.blog .entry h1 {
+  font-size: 3rem; }
+
+/*# sourceMappingURL=test.css.map */
