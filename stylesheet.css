@@ -5,23 +5,22 @@
       src: url('fonts/OCRAStd.otf');
     }
 
-    @font-face {
+@font-face {
       font-family:'Outage-Regular';
       src: url('fonts/Outage.ttf');
     }
 
-    @font-face {
+@font-face {
       font-family:'Stag-Semibold';
       src: url('fonts/Stag-Semibold.otf');
     }
 
-    @font-face {
+@font-face {
       font-family:'Stag-BoldDot';
       src: url('fonts/Stag-BoldDot.otf');
     }
- 
-
- /*Sets up a sixteen column grid*/
+    
+/*Sets up a sixteen column grid*/
 
  .col-md-1 {
     width:6%;

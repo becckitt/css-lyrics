@@ -179,18 +179,32 @@ body {
     fill: #df466b; } }
 @-webkit-keyframes drugsGradient {
   0% {
-    fill: #df466b; }
+    fill: #53b690; }
   50% {
-    fill: #b66bef; }
+    fill: #f3b247; }
   100% {
-    fill: #df466b; } }
+    fill: #53b690; } }
 @keyframes drugsGradient {
   0% {
-    fill: #df466b; }
+    fill: #53b690; }
   50% {
-    fill: #b66bef; }
+    fill: #f3b247; }
   100% {
-    fill: #df466b; } }
+    fill: #53b690; } }
+@-webkit-keyframes margielaGradient {
+  0% {
+    fill: #f36d65; }
+  50% {
+    fill: #c15cdf; }
+  100% {
+    fill: #f36d65; } }
+@keyframes margielaGradient {
+  0% {
+    fill: #f36d65; }
+  50% {
+    fill: #c15cdf; }
+  100% {
+    fill: #f36d65; } }
 /* /////////////////////    DAY 2    /////////////////////////////*/
 .is-visible {
   opacity: 1;

@@ -192,24 +192,35 @@
 
 /* /////////////////////    DAY 1    /////////////////////////////*/
 
-@mixin day-one-animation {
-    0% {fill: #df466b;}
-    50% {fill: #b66bef;}
-    100% {fill: #df466b;}
+@mixin day-one-animation($color1, $color2) {
+    0% {fill: $color1;}
+    50% {fill: $color2;}
+    100% {fill: $color1;}
 }
 
-@-webkit-keyframes louieGradient {
-      @include day-one-animation;
-    }
+@-webkit-keyframes louieGradient{
+    @include day-one-animation(#df466b, #b66bef);
+    } 
+
 @keyframes louieGradient {
-      @include day-one-animation;
-    }
+    @include day-one-animation(#df466b, #b66bef);
+}
+
 @-webkit-keyframes drugsGradient {
-      @include day-one-animation;
-    }
+    @include day-one-animation(#53b690, #f3b247);
+}
+
 @keyframes drugsGradient {
-      @include day-one-animation;
-    }
+    @include day-one-animation(#53b690, #f3b247);
+}
+
+@-webkit-keyframes margielaGradient {
+    @include day-one-animation(#f36d65, #c15cdf);
+}
+
+@keyframes margielaGradient {
+    @include day-one-animation(#f36d65, #c15cdf);
+} 
 
 /* /////////////////////    DAY 2    /////////////////////////////*/
 @mixin day-two-perspective-anim($sec, $delay) {
