@@ -5,12 +5,126 @@
   
   <meta charset="UTF-8">
   
-  <title> Title </title>
+  <title> Fly to Death </title>
+  <link rel="stylesheet" type="text/css" href="stylin.css">
+  <style type="text/css">
+
+  body {
+    font-family: 'CooperBlackStd';
+    font-size: 16px;
+  }
+
+  @font-face {
+  font-family: 'CooperBlackStd';
+  src: url("fonts/CooperBlackStd.ttf"); }
+
+    .parallax {
+      perspective: 1px;
+      perspective-origin-x: 100%;
+      height:100vh;
+      overflow-x:hidden;
+      overflow-y:auto;
+    }
+
+    .parallax_layer {
+      transform-origin-x: 100%;
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+    }
+
+    .parallax_layer_base {
+      transform: translateZ(0);
+    }
+
+/*Calculate scale : 1+ |transformZ| / perspective*/
+
+    .parallax_layer_back {
+      transform: translateZ(-2px) scale(3);
+    }
+
+    .parallax_layer_middle {
+      transform: translateZ(-1px) scale(2);
+    }
+
+    .parallax_layer_deep {
+      transform: translateZ(-3px) scale(4);
+    }
+
+    .parallax_layer_deeper {
+      transform: translateZ(-4px) scale(5);
+    }
+
+    .quote1 {
+      font-size:3rem;
+      width:50%;
+      top:100px;
+/*      transform: rotate(-15deg);
+      transform-origin: 400px -300px;*/
+    }
+
+    .quote2 {
+      font-size:3rem;
+      width:50%;
+      left:600px;
+      top:600px;
+      /*transform: rotate(25deg);
+      transform-origin: 400px 1600px;*/
+    }
+
+    .quote3 {
+      font-size:3rem;
+      width:100%;
+      top:1300px;
+    }
+
+    .quote4{
+      margin-left:auto;
+      margin-right:auto;
+      width:75%;
+      top:3500px;
+      font-size: 1.5rem;
+    }
+
+    .quote5{
+      margin-left:auto;
+      margin-right:auto;
+      width:100%;
+      top:4000px;
+      font-size:5rem;
+    }
+
+  </style>
+
 </head>
 
 
 <body>
-  
+<div class="parallax">
+  <div class="parallax_layer parallax_layer_back quote1">
+    <h2>Let the suicide doors up.</h2>
+  </div>
+  <div class="parallax_layer parallax_layer_base quote2" align="right">
+    <h2>I threw suicides on the tour bus.</h2>
+  </div>
+  <div class="parallax_layer parallax_layer_middle quote3" align="center">
+    <h2>I threw suicides on the private jet.</h2>
+  </div>
+
+  <div class="parallax_layer parallax_layer_deeper quote4" align="center">
+    <h1>You know what that mean?</h1>
+  </div>
+
+  <div class="parallax_layer parallax_layer_base quote5" align="center">
+    <h1>I'm fly to death.</h1>
+  </div>
+</div>
+
+
+ 
+
 
 </body>
 </html>
