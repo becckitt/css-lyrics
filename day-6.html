@@ -10,6 +10,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/jquery.lettering-0.6.min.js"></script>
   <style type="text/css">
+  	body {
+  		background-color: black;
+  	}
 		h2{
 			font-family: 'Didot';
 			font-size: 3rem;
@@ -48,11 +51,67 @@
 
 		.ye-phrases h2 > span > span > span {
 			display: inline-block;
-			color: rgba(0,0,0,0);
+			color: hsla(0,0%,0%,0);
 			transform-style:preserve-3d;
 			transform: translate3d(0,0,0);
 			animation: StyleSequence 5.2s linear forwards;
 		}
+
+		/*Styling each part of the sequence*/
+		.ye-phrases h2:nth-child(2) > span > span > span {
+			animation-delay:5s;
+		}
+		.ye-phrases h2:nth-child(3) > span > span > span {
+			animation-delay:10s;
+		}
+		.ye-phrases h2:nth-child(4) > span > span > span {
+			animation-delay:14s;
+		}
+
+		.ye-phrases h2:nth-child(5) > span > span > span {
+			animation: LastOne 4s linear 20s forwards;
+		}
+
+		@keyframes StyleSequence {
+			0% {
+				text-shadow: 0 0 50px #fff;
+				letter-spacing: 80px;
+				opacity: 0.2;
+				transform: rotateY(-90deg);
+			}
+
+			50% {
+				text-shadow: 0 0 1px #fff;
+				letter-spacing: 14px;
+				opacity:0.8;
+				transform: rotateY(0deg);
+			}
+
+			85% {
+				text-shadow: 0 0 1px #fff;
+				opacity:0.8;
+				transform: rotateY(0deg) translateZ(100px);
+			}
+
+			100% {
+				text-shadow: 0 0 10px #fff;
+				opacity: 0;
+				transform: translateZ(130px);
+				pointer-events: none;
+			}
+		}
+
+		@keyframes LastOne {
+			0% {
+				opacity: 0;
+				text-shadow: 0 0 50px #fff;
+			}
+			100% {
+				opacity: 0.8;
+				text-shadow: 0 0 1px #fff;
+			}
+		}
+
 
   </style>
 
@@ -63,11 +122,11 @@
 
 <div align="center">
 	<div class="ye-phrases">
-		<h2> You are now watching the throne</h2>
-		<h2>Don't let me get in my zone</h2>
-		<h2>Don't let me get in my zone</h2>
-		<h2>Don't let me into my zone</h2>
-		<h2>I'm definitely in my zone</h2>
+		<h2> You are now watching the throne</h2>  <!-- 1 -->
+		<h2>Don't let me get in my zone</h2>  <!-- 2 -->
+		<h2>Don't let me get in my zone</h2>  <!-- 3 -->
+		<h2>Don't let me into my zone</h2>   <!-- 4 -->
+		<h2>I'm definitely in my zone.</h2>   <!-- 5 -->
 	</div>
 </div>
 
