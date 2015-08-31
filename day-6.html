@@ -54,22 +54,22 @@
 			color: hsla(0,0%,0%,0);
 			transform-style:preserve-3d;
 			transform: translate3d(0,0,0);
-			animation: StyleSequence 5.2s linear forwards;
+			animation: StyleSequence 4s linear forwards;
 		}
 
 		/*Styling each part of the sequence*/
 		.ye-phrases h2:nth-child(2) > span > span > span {
-			animation-delay:5s;
+			animation-delay:3s;
 		}
 		.ye-phrases h2:nth-child(3) > span > span > span {
-			animation-delay:10s;
+			animation-delay:6s;
 		}
 		.ye-phrases h2:nth-child(4) > span > span > span {
-			animation-delay:14s;
+			animation-delay:9s;
 		}
 
 		.ye-phrases h2:nth-child(5) > span > span > span {
-			animation: LastOne 4s linear 20s forwards;
+			animation: LastOne 4s linear 12.5s forwards;
 		}
 
 		@keyframes StyleSequence {
@@ -104,11 +104,13 @@
 		@keyframes LastOne {
 			0% {
 				opacity: 0;
-				text-shadow: 0 0 50px #fff;
+				color:#FF0000;
+				text-shadow: 0 0 50px #FF0000;
 			}
 			100% {
 				opacity: 0.8;
-				text-shadow: 0 0 1px #fff;
+				color:#FF0000;
+				text-shadow: 0 0 1px #FF0000;
 			}
 		}
 
@@ -122,7 +124,7 @@
 
 <div align="center">
 	<div class="ye-phrases">
-		<h2> You are now watching the throne</h2>  <!-- 1 -->
+		<h2>You are now watching the throne</h2>  <!-- 1 -->
 		<h2>Don't let me get in my zone</h2>  <!-- 2 -->
 		<h2>Don't let me get in my zone</h2>  <!-- 3 -->
 		<h2>Don't let me into my zone</h2>   <!-- 4 -->
