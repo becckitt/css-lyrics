@@ -16,6 +16,7 @@
 
   <style type="text/css">
   	.ye-questions {
+      margin-top: 15%;
   		font-family: 'Helvetica Neue';
   		font-weight:bold;
   		font-size: 5rem;
@@ -57,8 +58,9 @@ if (randQuestion == whoLives) {
   $('.ye-questions').append(makesRealShit);
 } else if (randQuestion == lateness) {
   $('.ye-questions').append(honoredByMyLateness);
-}
-else {
+} else if (randQuestion == myGirl) {
+  $('.ye-questions').append(homeMovie);
+} else {
   $('.ye-questions').append(rightMyWrongs);
 }
 
