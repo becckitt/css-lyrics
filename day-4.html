@@ -11,6 +11,9 @@
   <title> Fly to Death </title>
   <link rel="stylesheet" type="text/css" href="stylin.css">
   <style type="text/css">
+  @font-face {
+  font-family: 'CooperBlackStd';
+  src: url("fonts/CooperBlackStd.otf"); }
 
   body {
     font-family: 'CooperBlackStd';
@@ -18,9 +21,7 @@
     color:#29251F;
   }
 
-  @font-face {
-  font-family: 'CooperBlackStd';
-  src: url("fonts/CooperBlackStd.ttf"); }
+  
 
     .parallax {
       perspective: 1px;
@@ -72,6 +73,11 @@
       transform: translateZ(-12px) scale(13);
     }
 
+    .img2 {
+      opacity: .85;
+      margin-top:50%;
+    }
+
     .quote1 {
       font-size:3rem;
       width:50%;
@@ -91,7 +97,6 @@
 
     .quote3 {
       font-size:3rem;
-      width:100%;
       top:1300px;
     }
 
@@ -106,9 +111,8 @@
     .quote5{
       margin-left:auto;
       margin-right:auto;
-      width:100%;
       top:4000px;
-      font-size:5rem;
+      font-size:4.5rem;
     }
 
   </style>
@@ -119,7 +123,10 @@
 <body>
 <div class="parallax">
   <div class="parallax_bg parallax_layer_deepest">
-  <img src="img/day-4-bg.jpeg" alt="" height="600">
+    <img src="img/day-4-bg.jpeg" alt="" height="600">
+  </div>
+  <div class="parallax_bg parallax_layer_deeper img2" align="right">
+    <img src="img/day-4.jpeg" alt="" height="600">
   </div>
   <div class="parallax_layer parallax_layer_back quote1">
     <h2>Let the suicide doors up.</h2>
@@ -127,7 +134,7 @@
   <div class="parallax_layer parallax_layer_base quote2" align="right">
     <h2>I threw suicides on the tour bus.</h2>
   </div>
-  <div class="parallax_layer parallax_layer_middle quote3" align="center">
+  <div class="parallax_layer parallax_layer_middle quote3 col-md-12" align="center">
     <h2>I threw suicides on the private jet.</h2>
   </div>
 
@@ -135,7 +142,7 @@
     <h1>You know what that mean?</h1>
   </div>
 
-  <div class="parallax_layer parallax_layer_base quote5" align="center">
+  <div class="parallax_layer parallax_layer_base quote5 col-md-15" align="center">
     <h1>I'm fly to death.</h1>
   </div>
 
