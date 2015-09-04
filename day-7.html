@@ -44,6 +44,8 @@ var ateBreakfast;
 var bestThings;
 var hoesClothes;
 var cantTell;
+var realShit;
+var lateness;
 var wrongs;
 
 whoLives = "Which celebrity happens to live next door to the house you just looked at the other day?";
@@ -52,13 +54,16 @@ ateBreakfast = "At which established fashion house did you have breakfast this m
 bestThings = "What do they say the best things in life are?";
 hoesClothes = "When the hoes come to your party, what should they be wearing?";
 cantTell = "What can't I tell you?";
-wrongs = "What do you regret, but also acknowledge that that's the same thing that got you to where you are today?"
+realShit = "What are you not sure that anyone even makes anymore?";
+lateness = "Upon your late arrival to a function, what should the host be honored by?";
+wrongs = "What do you regret, but also acknowledge that that's the same thing that got you to where you are today?";
+
 
 
 
 //Setting up an array and selecting one of the prompt questions at random.
 
-var kanyeArray = [whoLives, whosGonnaKillYou, ateBreakfast, bestThings, hoesClothes];
+var kanyeArray = [realShit];
 var randQuestion = kanyeArray[Math.floor(Math.random() * kanyeArray.length)];
 
 var randomPrompt = prompt(randQuestion);
@@ -68,9 +73,12 @@ var randomPrompt = prompt(randQuestion);
 var whereSomeoneLives = "Now I’m looking at a crib right next to where " + "<span class='answer'>" + randomPrompt + "</span>" + " lives";
 var gonnaKillMe = "I know " + "<span class='answer'>" + randomPrompt + "</span>" + " gon' kill me but let me finish";
 var ateBreakfastAt = "Break records at Louis, ate breakfast at <span class='answer'>" + randomPrompt + "</span>";
-var thingsInLife = "The good life, let's go on a living' spree. Shit, they say the best things in life are <span class='answer'>" + randomPrompt + "</span>";
-var sexyHoes = "And you know that you need to bring some extra hoes. Not in jogging pants either, tell them wear some <span class='answer'>" + randomPrompt + "</span>";
-var cantTellMeNothin = "Excuse Me, is you saying something? Uh, uh, you can't tell me <span class='answer'>" + randomPrompt + "</span>"
+var thingsInLife = "The good life, let's go on a living' spree. Shit, they say the best things in life are <span class='answer'>" + randomPrompt.toLowerCase(); + "</span>";
+var sexyHoes = "And you know that you need to bring some extra hoes. Not in jogging pants either, tell them wear some <span class='answer'>" + randomPrompt.toLowerCase(); + "</span>";
+var cantTellMeNothin = "Excuse me, is you saying something? Uh, uh, you can't tell me <span class='answer'>" + randomPrompt.toLowerCase(); + "</span>";
+var makesRealShit = "I ask 'cause I'm not sure. Do anybody make <span class='answer'>" + randomPrompt + "</span>" + " anymore?";
+var honoredByMyLateness = "You should be honored by my <span class='answer'" + randomPrompt + ",</span> that I would even show up to this fake shit."
+var rightMyWrongs = "I'm trying to right my <span class='answer'>" + randomPrompt.toLowerCase() + ",</span>" + " but it's funny these same <span class='answer'>" + randomPrompt.toLowerCase() + "</span>" + " helped me write this song.";
 
 //Realllllll crude way of returning the right lyrics given the prompt.
 
@@ -86,6 +94,13 @@ if (randQuestion == whoLives) {
 	$('.ye-questions').append(sexyHoes);	
 } else if (randQuestion == cantTell) {
 	$('.ye-questions').append(cantTellMeNothin);
+} else if (randQuestion == realShit) {
+  $('.ye-questions').append(makesRealShit);
+} else if (randQuestion == lateness) {
+  $('.ye-questions').append(honoredByMyLateness);
+}
+else {
+  $('.ye-questions').append(rightMyWrongs);
 }
 
 </script>
