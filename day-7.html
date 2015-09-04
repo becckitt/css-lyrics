@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="stylin.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/jquery.lettering-0.6.min.js"></script>
+  <script src="js/day7_questions.js"></script>
+  <script src="js/day7_answers.js"></script>
+
   <style type="text/css">
   	.ye-questions {
   		font-family: 'Helvetica Neue';
@@ -35,50 +38,6 @@
 </div>
 
 <script>
-
-// Setting up prompt questions.
-
-var whoLives;
-var whosGonnaKillYou;
-var ateBreakfast;
-var bestThings;
-var hoesClothes;
-var cantTell;
-var realShit;
-var lateness;
-var wrongs;
-
-whoLives = "Which celebrity happens to live next door to the house you just looked at the other day?";
-whosGonnaKillYou = "Who's gonna kill you for saying this, but you have to say it anyway?";
-ateBreakfast = "At which established fashion house did you have breakfast this morning?";
-bestThings = "What do they say the best things in life are?";
-hoesClothes = "When the hoes come to your party, what should they be wearing?";
-cantTell = "What can't I tell you?";
-realShit = "What are you not sure that anyone even makes anymore?";
-lateness = "Upon your late arrival to a function, what should the host be honored by?";
-wrongs = "What do you regret, but also acknowledge that that's the same thing that got you to where you are today?";
-
-
-
-
-//Setting up an array and selecting one of the prompt questions at random.
-
-var kanyeArray = [realShit];
-var randQuestion = kanyeArray[Math.floor(Math.random() * kanyeArray.length)];
-
-var randomPrompt = prompt(randQuestion);
-
-//Setting up the lyrics with the given answer.
-
-var whereSomeoneLives = "Now I’m looking at a crib right next to where " + "<span class='answer'>" + randomPrompt + "</span>" + " lives";
-var gonnaKillMe = "I know " + "<span class='answer'>" + randomPrompt + "</span>" + " gon' kill me but let me finish";
-var ateBreakfastAt = "Break records at Louis, ate breakfast at <span class='answer'>" + randomPrompt + "</span>";
-var thingsInLife = "The good life, let's go on a living' spree. Shit, they say the best things in life are <span class='answer'>" + randomPrompt.toLowerCase(); + "</span>";
-var sexyHoes = "And you know that you need to bring some extra hoes. Not in jogging pants either, tell them wear some <span class='answer'>" + randomPrompt.toLowerCase(); + "</span>";
-var cantTellMeNothin = "Excuse me, is you saying something? Uh, uh, you can't tell me <span class='answer'>" + randomPrompt.toLowerCase(); + "</span>";
-var makesRealShit = "I ask 'cause I'm not sure. Do anybody make <span class='answer'>" + randomPrompt + "</span>" + " anymore?";
-var honoredByMyLateness = "You should be honored by my <span class='answer'" + randomPrompt + ",</span> that I would even show up to this fake shit."
-var rightMyWrongs = "I'm trying to right my <span class='answer'>" + randomPrompt.toLowerCase() + ",</span>" + " but it's funny these same <span class='answer'>" + randomPrompt.toLowerCase() + "</span>" + " helped me write this song.";
 
 //Realllllll crude way of returning the right lyrics given the prompt.
 
