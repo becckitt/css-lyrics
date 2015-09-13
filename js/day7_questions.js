@@ -23,7 +23,7 @@ realShit = "What are you not sure that anyone even makes anymore?";
 lateness = "Upon your late arrival to a function, what should the host be honored by?";
 myGirl = "What's your girl famous for?";
 realness = "What illness are you sufferin' from?";
-brews = "What did he have a few of, that might have made him act a little crazy?"
+brews = "What did Tom Cruise have a few of, that might have made him act a little crazy?"
 wrongs = "What do you regret, but also acknowledge that that's the same thing that got you to where you are today?";
 
 

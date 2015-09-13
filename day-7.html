@@ -56,31 +56,40 @@ try again </a></div>
 
 //Realllllll crude way of returning the right lyrics given the prompt.
 
-if (randQuestion == whoLives) { 
-	$('.ye-questions').append(whereSomeoneLives);
-} else if (randQuestion == whosGonnaKillYou) {
-	$('.ye-questions').append(gonnaKillMe);
-} else if (randQuestion == ateBreakfast) {
-	$('.ye-questions').append(ateBreakfastAt);
-} else if (randQuestion == bestThings) {
-	$('.ye-questions').append(thingsInLife);
-} else if (randQuestion == hoesClothes) {
-	$('.ye-questions').append(sexyHoes);	
-} else if (randQuestion == cantTell) {
-	$('.ye-questions').append(cantTellMeNothin);
-} else if (randQuestion == realShit) {
-  $('.ye-questions').append(makesRealShit);
-} else if (randQuestion == lateness) {
-  $('.ye-questions').append(honoredByMyLateness);
-} else if (randQuestion == myGirl) {
-  $('.ye-questions').append(homeMovie);
-} else if (randQuestion == realness) {
-  $('.ye-questions').append(sufferinFromRealness);
-} else if (randQuestion == brews) {
-  $('.ye-questions').append(heJustHadAFewBrews);
-} else {
-  $('.ye-questions').append(rightMyWrongs);
+function questionAndAnswer(question, answer) {
+  if (randQuestion == question) { 
+    $('.ye-questions').append(answer);
 }
+
+questionAndAnswer(randPrompt, answer);
+
+
+
+// if (randQuestion == whoLives) { 
+//   questionAndAnswer(whereSomeoneLives)
+// } else if (randQuestion == whosGonnaKillYou) {
+//   questionAndAnswer(gonnaKillMe)
+// } else if (randQuestion == ateBreakfast) {
+// 	questionAndAnswer(ateBreakfastAt)
+// } else if (randQuestion == bestThings) {
+// 	questionAndAnswer(thingsInLife)
+// } else if (randQuestion == hoesClothes) {
+// 	questionAndAnswer(sexyHoes)	
+// } else if (randQuestion == cantTell) {
+// 	questionAndAnswer(cantTellMeNothin)
+// } else if (randQuestion == realShit) {
+//   questionAndAnswer(makesRealShit)
+// } else if (randQuestion == lateness) {
+//   questionAndAnswer(honoredByMyLateness)
+// } else if (randQuestion == myGirl) {
+//   questionAndAnswer(homeMovie)
+// } else if (randQuestion == realness) {
+//   questionAndAnswer(sufferinFromRealness)
+// } else if (randQuestion == brews) {
+//   questionAndAnswer(heJustHadAFewBrews)
+// } else {
+//   questionAndAnswer(rightMyWrongs)
+// }
 
 </script>
 
