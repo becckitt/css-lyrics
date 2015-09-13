@@ -13,6 +13,7 @@ var makesRealShit;
 var honoredByMyLateness;
 var homeMovie;
 var sufferinFromRealness;
+var heJustHadAFewBrews;
 var rightMyWrongs;
 
 whereSomeoneLives = "Now I’m looking at a crib right next to where " + "<span class='answer'>" + randomPrompt + "</span>" + " lives.";
@@ -25,5 +26,6 @@ makesRealShit = "I ask, cause I'm not sure. Do anybody make <span class='answer'
 honoredByMyLateness = "You should be honored by my <span class='answer'>" + randomPrompt + ",</span> that I would even show up to this fake shit.";
 homeMovie = "My girl a superstar off of a <span class='answer'>" + randomPrompt + ".</span>";
 sufferinFromRealness = "Doctors say I'm the illest, cuz I'm sufferin' from <span class='answer'>" + randomPrompt + ".</span>";
+heJustHadAFewBrews = "Whatever she accuse, he weren't really drunk he just had a few <span class='answer'>" + randomPrompt + ".</span>";
 rightMyWrongs = "I'm trying to right my <span class='answer'>" + randomPrompt.toLowerCase() + ",</span>" + " but it's funny these same <span class='answer'>" + randomPrompt.toLowerCase() + "</span>" + " helped me write this song.";
 
