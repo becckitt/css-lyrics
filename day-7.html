@@ -40,7 +40,7 @@
 
 
   </style>
-  </head>
+</head>
 
 <body>
 
@@ -54,11 +54,10 @@ try again </a></div>
 
 <script>
 
-//Realllllll crude way of returning the right lyrics given the prompt.
-
 function questionAndAnswer(question, answer) {
   if (randQuestion == question) { 
     $('.ye-questions').append(answer);
+  }
 }
 
 questionAndAnswer(randPrompt, answer);
